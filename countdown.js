@@ -11,6 +11,6 @@ function doIt() {
     hh = hours - days * 24;
     mm = mins - hours * 60;
     ss = secs - mins * 60;
-    document.getElementById("countdown").innerHTML = dd + ' days ' + hh + ' hours ' + mm + ' minutes ' + ss + ' seconds ';
+    document.getElementById("countdown").innerHTML = dd + ' days ' + '<br>' + hh + ' hours ' + '<br>' + mm + ' minutes ' + '<br>' + ss + ' seconds ';
     },1000)   
 }

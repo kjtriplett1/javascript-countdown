@@ -8,15 +8,25 @@
     <title>countdown</title>
 </head>
 <body>
-    <p>Enter a date in the format: "December 25, 2021"<br> (optionally add time, e.g, "17:00:00")</p>
-    <br><br>
-    <input type="text" id="date" size="50">
+<!--main grid container start-->
+<div class="wrapper"> 
+    <div class="container"> <!--enter date box-->
+        <h1>Enter a date:</h1>
+        <h3>Example:<br> December 25, 2050</h3>
+        <p>Add a time (optional)<br> Example:<br>December 25, 2050 1:00</p>
+        <input type="text" class="enter" id="date">
     <br><br>
     <button onclick="doIt()">Go</button>
-    <br><br>
-    <div class="container">The Countdown:
-    <br>
-        <div id="countdown"></div>
     </div>
+    <br>
+
+    <div class="container"> <!--countdown box-->
+        <h1>The Countdown:</h1>
+        <div id="countdown"></div>
+        <br><br>
+    </div>
+    
+</div>
+<!--main grid container end-->
 </body>
 </html>
