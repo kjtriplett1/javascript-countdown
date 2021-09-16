@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    background-color: rgb(236, 220, 148); 
+    background-color: black; 
 }
 
 /*main grid container*/
@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
-    background-color: rgb(236, 220, 148);  
+    background-color: black;  
 }
 
 /*enter date box*/
@@ -22,8 +22,8 @@ body {
     font-size: large;
     font-weight: bold;
     background-color: black;
-    color: rgb(236, 220, 148);
-    border: 5px solid rgb(236, 220, 148);
+    color: rgb(17, 209, 209);
+    border: 5px solid rgb(17, 209, 209);
     text-align: center;
     border-radius: 5px;
     padding: 5px;
@@ -32,22 +32,35 @@ body {
 button {
     width: 100px;
     padding: 10px;
-    color: rgb(236, 220, 148);
+    color: rgb(17, 209, 209);
     font-size: xx-large;
     background-color: black;
     border-radius: 10px;
-    border: 5px solid rgb(236, 220, 148);
+    border: 5px solid rgb(17, 209, 209);
+}
+
+button:hover {
+    background-color: rgb(17, 209, 209);
+    color: black;
+    border: 5px solid rgb(59, 56, 56);
+}
+
+button:active {
+    color: rgb(17, 209, 209);
+    border: 5px solid rgb(17, 209, 209);
+    background-color: black;
+    box-shadow: 5px 5px white;
+    transform: translateY(4px);
 }
 
 /*enter/countdown divs*/
 .container {
     text-align: center;
-    color: rgb(236, 220, 148);
+    color: rgb(17, 209, 209);
     background-color: black;
     border-radius: 40px;
     padding: 20px;
-    border: 5px solid black;
-    box-shadow: 5px 5px 20px 10px rgb(236, 225, 168) inset;
+    box-shadow: 5px 5px 20px 10px rgb(17, 209, 209) inset;
 }
 
 /*countdown box*/
@@ -57,10 +70,22 @@ button {
     font-size: large;
     font-weight: bold;
     background-color: black;
-    color: rgb(236, 220, 148);
+    color: rgb(17, 209, 209);
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     margin: auto;
-    box-shadow: 5px 5px 30px 10px rgb(238, 230, 189) inset;
+    box-shadow: 5px 5px 30px 10px rgb(17, 209, 209) inset;
+}
+
+.footer {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    color: black;
+    background-color: rgb(17, 209, 209);
+    box-shadow: 5px 5px 20px 10px black inset;
 }
